@@ -1,0 +1,14 @@
+{
+  "account": [
+    {
+      "id": "56a8d5d6-9b2e-4a7f-8f19-3c9db244d761",
+      "month": 2,
+      "date": "2024-06-10",
+      "category": "food",
+      "amount": 15000,
+      "description": "점심 식사",
+      "createdBy": "JohnDoe",
+      "userId": "9b2e-4a7f-8f19-3c9db244d761"
+    }
+  ]
+}
