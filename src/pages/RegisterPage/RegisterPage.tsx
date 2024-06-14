@@ -40,6 +40,26 @@ function MyPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
+    if (userId.length < 4 || userId.length > 10) {
+      setErrorMessage("아이디는 4~10글자여야 합니다.");
+      return;
+    }
+
+    if (userPassword.length < 4 || userPassword.length > 15) {
+      setErrorMessage("비밀번호는 4~15글자여야 합니다.");
+      return;
+    }
+
+    if (userPassword !== userPasswordCheck) {
+      setErrorMessage("비밀번호가 일치하지 않습니다.");
+      return;
+    }
+
+    if (userNickname.length < 1 || userNickname.length > 10) {
+      setErrorMessage("닉네임은 1~10글자여야 합니다.");
+      return;
+    }
+
     if (userPassword !== userPasswordCheck) {
       setErrorMessage("비밀번호가 일치하지 않습니다.");
       return;
