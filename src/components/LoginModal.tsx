@@ -40,7 +40,7 @@ const LoginModal = ({ show, onClose }: LoginModalProps) => {
   const navigate = useNavigate();
 
   const mutation = useMutation({
-    mutationFn: (user: { id: string; password: string; avatar: string }) =>
+    mutationFn: (user: { id: string; password: string }) =>
       api.auth.login(user),
 
     onSuccess: (data) => {
