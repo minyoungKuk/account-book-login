@@ -87,7 +87,7 @@ function Header() {
         {isLoggedIn ? (
           <>
             <img
-              src="/src/assets/images/ic-arrow-left.png"
+              src="/images/ic-arrow-left.png"
               style={{ width: "30px", padding: "4px", cursor: "pointer" }}
               onClick={handlePreviousMonth}
             />
@@ -95,7 +95,7 @@ function Header() {
               {monthNames[currentMonth.getMonth()]}
             </p>
             <img
-              src="/src/assets/images/ic-arrow-right.png"
+              src="/images/ic-arrow-right.png"
               style={{ width: "30px", padding: "4px", cursor: "pointer" }}
               onClick={handleNextMonth}
             />
